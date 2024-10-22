@@ -1,20 +1,24 @@
 {
   "images": [
     {
-      "src": "Adam & Eve.jpg",
-      "text": "Aesthetic Text 1"
+      "src": "Afun Party.jpg",
+      "text": ""
     },
     {
-      "src": "Let our swimwear empower you.jpg",
-      "text": "Aesthetic Text 2"
+      "src": "Komi.jpg",
+      "text": ""
+    },
+    {
+      "src": "One Greater Land.jpg",
+      "text": ""
     },
     {
       "src": "Wealthy Empire.jpg",
-      "text": "Aesthetic Text 3"
+      "text": ""
     },
     {
       "src": "Paris Bordon Portrait of a Man in Armor with Two Pages.jpg",
-      "text": "Aesthetic Text 4"
+      "text": ""
     }
   ]
 }

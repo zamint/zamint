@@ -167,18 +167,21 @@ const shuffleArray = (array: Image[]): Image[] => {
         <div className="flex flex-col items-center gap-10 p-[25px]">
           {items.map((_, index) => (
             <div
-              key={index}
-              className={`flex items-center w-full max-w-screen-lg h-[350px] overflow-hidden rounded-lg ${getAlignmentClass(index)}`}
+            key={index}
+            className={`relative flex items-center w-full max-w-screen-lg h-[350px] overflow-hidden rounded-lg ${getAlignmentClass(index)}`}
+          >
+            <img
+              src={`/MyImage/${images[index % images.length].src}`} // Dynamically load image from MyImage folder
+              alt={`Image ${index + 1}`}
+              className="w-80 h-80 object-cover transform transition-transform duration-300 hover:scale-105"
+            />
+            <p
+              className={`absolute bottom-0 w-full mb-4 text-sm text-white text-50% opacity-75 ${getTextPositionClass(index)}`}
             >
-              <img
-                src={`/MyImage/${images[index % images.length].src}`} // Dynamically load image from MyImage folder
-                alt={`Image ${index + 1}`}
-                className="w-80 h-80 object-cover transform transition-transform duration-300 hover:scale-105"
-              />
-              <p className={`absolute ${getTextPositionClass(index)} bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-xl py-4 px-6 uppercase tracking-wide opacity-0 transition-opacity duration-500 delay-100 hover:opacity-100`}>
-                {images[index % images.length].text}
-              </p>
-            </div>
+              {images[index % images.length].text}
+            </p>
+          </div>
+          
           ))}
         </div>
 
