@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Camera, Play, Pause } from 'lucide-react';
+import { Play, Pause } from 'lucide-react';
 import zamintData from '../data/zamint-ideology.json';
 
 const ZamintGallery = () => {
