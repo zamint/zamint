@@ -29,7 +29,7 @@ const ZamintGallery = () => {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8">
         <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Image Section */}
-          <div className="relative w-full aspect-square overflow-hidden rounded-2xl shadow-2xl border-4 border-red-900">
+          <div className="relative w-full aspect-square overflow-hidden rounded-2xl shadow-2xl border-4 border-white-900">
             <img 
               src={`/MyImage/${zamintData.zamintData[currentSlide].image}`} 
               alt="Zamint Concept" 
@@ -44,7 +44,7 @@ const ZamintGallery = () => {
 
           {/* Description Section */}
           <div className="space-y-6">
-            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-green-500">
+            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-black-200">
               Zamint Order
             </h1>
             <p className="text-gray-300 leading-relaxed">
@@ -73,7 +73,7 @@ const ZamintGallery = () => {
           onClick={toggleAutoScroll}
           className="absolute bottom-10 right-10 bg-black bg-opacity-50 border border-red-600 hover:bg-red-900 p-4 rounded-full transition-all duration-300 focus:outline-none"
         >
-          {isAutoScroll ? <Pause color="green" /> : <Play color="red" />}
+          {isAutoScroll ? <Pause color="white" /> : <Play color="red" />}
         </button>
       </div>
     </div>
